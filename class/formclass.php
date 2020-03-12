@@ -51,18 +51,36 @@ class Form
      */
     //a utiliser pour la modification des données (fichiers modif)
     // rempli l'input avec les données
-    public function input($name)
+    public function inputModif($name)
     {
         return $this->surround(
             '<input type="text" name="' . $name . '"value="' . $this->getValue($name) . '">'
         );
     }
 
+    /**
+     * Undocumented function
+     *
+     * @param [string] $name
+     * @return string
+     */
+    public function radio($name)
+    {
+        return $this->surround(
+            '<br><input type="radio" name="' . $name .   '">&nbsp'. $this->getValue($name)
+        );
+    }
+
+    public function titre($title)
+    {
+        return $this->getValue($title);
+    }
+
     // fonction d'input à remplir
-    // public function input($name)
-    // {
-    //     return $this->surround('<input type="text" name="'.$name.'">','p');
-    // }
+    public function input($name)
+    {
+        return $this->surround('<input type="text" name="'.$name.'">','p');
+    }
 
     /**
      * @return string
