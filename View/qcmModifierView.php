@@ -20,6 +20,10 @@
     spl_autoload_register(function ($class_name) {
         include_once "../class/" . $class_name . "class.php";
     });
+
+    $form = new Form($_POST);
+
+
     ?>
 
     <div class="privew">
