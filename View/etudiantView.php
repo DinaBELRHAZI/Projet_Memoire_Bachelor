@@ -27,4 +27,4 @@ foreach ($listeEtudiant as $donnees) {
     echo "</div>";
 
 }
-    echo "<button value='ajouter'><a class='button' href='".BASE_URL."/etudiant/add'>Ajouter</a></button>";
+    echo "<button value='ajouter'><a class='button' href='".BASE_URL."/View/ajouterEtudiantView/'>Ajouter</a></button>";
