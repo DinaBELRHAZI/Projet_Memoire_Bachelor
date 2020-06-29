@@ -41,6 +41,5 @@ require "Model/connexion.php";
         }
 
         // if(isset($_GET['id']))
-        // echo ('toto'.$_GET['id']);
 
         require "./Controller/".$page.".php";
